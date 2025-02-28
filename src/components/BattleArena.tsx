@@ -206,8 +206,8 @@ const BattleArena = ({ player, enemy: initialEnemy, onBattleEnd }: BattleArenaPr
           {/* Player character */}
           <div className="flex space-x-4">
             <div className="relative">
-              <div className="w-20 h-20 rounded-full backdrop-blur-sm bg-gradient-to-br from-primary/10 to-primary/30 flex items-center justify-center">
-                <img src={playerCharacter.icon} alt={playerCharacter.name} className="w-12 h-12" />
+              <div className="w-24 h-24 rounded-full backdrop-blur-sm bg-gradient-to-br from-primary/10 to-primary/30 flex items-center justify-center">
+                <img src={playerCharacter.icon} alt={playerCharacter.name} className="w-20 h-20 object-contain" />
               </div>
               <div className="absolute -bottom-1 -right-1 bg-primary text-primary-foreground text-xs font-medium rounded-full h-6 w-6 flex items-center justify-center">
                 {turn === "player" ? "→" : ""}
@@ -265,11 +265,11 @@ const BattleArena = ({ player, enemy: initialEnemy, onBattleEnd }: BattleArenaPr
           {/* Enemy character */}
           <div className="flex space-x-4">
             <div className="relative">
-              <div className="w-20 h-20 rounded-full backdrop-blur-sm bg-gradient-to-br from-red-500/10 to-red-500/30 flex items-center justify-center">
+              <div className="w-24 h-24 rounded-full backdrop-blur-sm bg-gradient-to-br from-red-500/10 to-red-500/30 flex items-center justify-center">
                 {enemyCharacter.health <= 0 ? (
-                  <SkullIcon className="w-12 h-12 text-destructive" />
+                  <SkullIcon className="w-16 h-16 text-destructive" />
                 ) : (
-                  <img src={enemyCharacter.icon} alt={enemyCharacter.name} className="w-12 h-12" />
+                  <img src={enemyCharacter.icon} alt={enemyCharacter.name} className="w-20 h-20 object-contain" />
                 )}
               </div>
               <div className="absolute -bottom-1 -right-1 bg-destructive text-destructive-foreground text-xs font-medium rounded-full h-6 w-6 flex items-center justify-center">

@@ -32,13 +32,16 @@ const GameOverScreen = ({ victory, character, enemy, onPlayAgain }: GameOverScre
             transition={{ delay: 0.3, type: "spring" }}
             className="mb-6"
           >
-            <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-success/20 flex items-center justify-center">
-              <Trophy className="h-10 w-10 text-success" />
+            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-success/20 flex items-center justify-center">
+              <Trophy className="h-12 w-12 text-success" />
             </div>
             <h2 className="text-3xl font-bold mb-2">Victory!</h2>
             <p className="text-muted-foreground">
               {character.name} has defeated {enemy.name}!
             </p>
+            <div className="mt-4 flex justify-center">
+              <img src={character.icon} alt={character.name} className="w-20 h-20 object-contain" />
+            </div>
           </motion.div>
         ) : (
           <motion.div
@@ -47,13 +50,16 @@ const GameOverScreen = ({ victory, character, enemy, onPlayAgain }: GameOverScre
             transition={{ delay: 0.3, type: "spring" }}
             className="mb-6"
           >
-            <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-destructive/20 flex items-center justify-center">
-              <SkullIcon className="h-10 w-10 text-destructive" />
+            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-destructive/20 flex items-center justify-center">
+              <SkullIcon className="h-12 w-12 text-destructive" />
             </div>
             <h2 className="text-3xl font-bold mb-2">Defeat</h2>
             <p className="text-muted-foreground">
               {character.name} has been defeated by {enemy.name}.
             </p>
+            <div className="mt-4 flex justify-center">
+              <img src={enemy.icon} alt={enemy.name} className="w-20 h-20 object-contain" />
+            </div>
           </motion.div>
         )}
         

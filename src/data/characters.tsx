@@ -1,10 +1,10 @@
 
 // Character and ability icons
 const icons = {
-  swordsman: '/lovable-uploads/267687c8-67d8-46e4-9c2c-1dba43a63cb0.png',
-  archer: '/lovable-uploads/55904bea-c1cf-4b9e-a0ac-463d65094f95.png',
-  mage: '/lovable-uploads/033d9659-40d5-4e52-84d1-94dc28212b95.png',
-  overlord: '/lovable-uploads/f55094cf-599b-4284-961f-112113fec7f7.png',
+  swordsman: '/lovable-uploads/11fe7ac9-b8c7-4db2-8868-6d6feac44f22.png', // Updated swordsman image
+  archer: '/lovable-uploads/9d1f38d7-170f-4d0b-8509-d0f51db10fbe.png', // Updated archer image
+  mage: '/lovable-uploads/add05c1a-efb8-4d2d-b799-dfbc8414a995.png', // Updated mage image
+  overlord: '/lovable-uploads/77289e54-9aa0-4220-96e3-4ee86df138c9.png', // Updated overlord image
   enemy: '/lovable-uploads/b80f4b4b-ea1b-4524-8089-df5f52bc761c.png',
   slash: '/lovable-uploads/86ea8ffd-007a-48af-aa7a-1284b3881443.png',
   arrow: '/lovable-uploads/15d99ac8-b68b-40ed-b639-a9c71740f368.png',

@@ -44,8 +44,8 @@ const CharacterCard = ({
       <div className="absolute -top-6 -right-6 h-24 w-24 rounded-full bg-primary/10 blur-2xl"></div>
       
       <div className="p-6">
-        <div className="w-20 h-20 mx-auto mb-4 rounded-full backdrop-blur-sm bg-gradient-to-br from-primary/10 to-primary/30 flex items-center justify-center">
-          <img src={icon} alt={name} className="w-12 h-12" />
+        <div className="w-24 h-24 mx-auto mb-4 rounded-full backdrop-blur-sm bg-gradient-to-br from-primary/10 to-primary/30 flex items-center justify-center">
+          <img src={icon} alt={name} className="w-20 h-20 object-contain" />
         </div>
         
         <h3 className="text-xl font-bold text-center mb-1">{name}</h3>
