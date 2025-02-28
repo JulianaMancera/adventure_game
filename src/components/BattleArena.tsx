@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Shield, Sword, Brain, Zap, Heart, SkullIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
+import { useToast } from "@/components/ui/use-toast";
 import { Progress } from "@/components/ui/progress";
 
 interface Character {
@@ -44,6 +44,7 @@ const BattleArena = ({ player, enemy: initialEnemy, onBattleEnd }: BattleArenaPr
   const [battleOver, setBattleOver] = useState(false);
   const [selectedAbility, setSelectedAbility] = useState<number | null>(null);
   const [damageAnimation, setDamageAnimation] = useState<"player" | "enemy" | null>(null);
+  const { toast } = useToast();
 
   useEffect(() => {
     // Add initial battle message

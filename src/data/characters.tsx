@@ -12,6 +12,9 @@ const icons = {
   superAbility: '/lovable-uploads/b0dc69cd-bfed-4549-a4b5-bcf4dafc5076.png',
 };
 
+// Adding the new image you shared
+const newEnemyIcon = '/lovable-uploads/4edf0a50-2f09-4f45-9023-c086003c2067.png';
+
 export const characters = [
   {
     id: "swordsman",
@@ -223,7 +226,7 @@ export const enemy = {
   defense: 5,
   intelligence: 50,
   speed: 50,
-  icon: icons.enemy,
+  icon: newEnemyIcon, // Using the new enemy image you provided
   abilities: [
     {
       id: 1,
